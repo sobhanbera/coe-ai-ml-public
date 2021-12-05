@@ -1,4 +1,16 @@
 .header {
-    min-height: 52px;
-    height: 60px;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--themecolor);
+
+    .content {
+        margin: auto;
+        padding: 0 var(--main-max-padding);
+        background-color: red;
+
+        min-height: var(--header-height);
+        height: var(--header-height);
+        line-height: var(--header-height);
+        max-width: var(--main-max-vw);
+    }
 }
