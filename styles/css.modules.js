@@ -6,7 +6,7 @@ const componentStyles = {
     footerStyles: footer,
 }
 
-import home from './pages/home.module.css'
+import home from './pages/home/home.module.css'
 
 const pageStyles = {
     homeStyles: home,
