@@ -40,12 +40,12 @@ body {
 }
 
 :root {
-    --light-scroll: #e7e7e7;
+    --light-scroll: #efefef;
     --dark-scroll: #374785;
 }
 
 body {
-    background-color: #e7e7e7;
+    background-color: #efefef;
 }
 
 *::-moz-selection {
