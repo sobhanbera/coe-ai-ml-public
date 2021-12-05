@@ -1,7 +1,9 @@
-import header from './components/header.module.scss'
+import header from './components/header/header.module.css'
+import footer from './components/footer/footer.module.css'
 
 const componentStyles = {
     headerStyles: header,
+    footerStyles: footer,
 }
 
 import home from './pages/home.module.css'
