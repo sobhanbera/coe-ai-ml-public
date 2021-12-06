@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
-import {useRouter} from 'next/router'
+import Router, {useRouter} from 'next/router'
 
 import {componentStyles} from '../../styles/css.modules'
 
@@ -10,6 +10,12 @@ export default function Header() {
     const [showMenu, setShowMenu] = useState(false)
 
     const pathname = useRouter().pathname
+
+    useEffect(() => {
+        Router.events.on('routeChangeComplete', () => {
+            setShowMenu(false)
+        })
+    }, [])
 
     return (
         <header className={componentStyles.headerStyles.header}>
@@ -74,9 +80,9 @@ export default function Header() {
                     }>
                     <Image
                         onClick={() => setShowMenu(value => !value)}
-                        src="/img/menu.png"
-                        width={22}
-                        height={22}
+                        src={showMenu ? '/img/cross.png' : '/img/menu.png'}
+                        width={showMenu ? 16 : 20} // 20 for menu icon's size else small since the icon width is diff
+                        height={showMenu ? 16 : 20} // 20 for menu icon's size else small since the icon width is diff
                         alt="menu icon"
                         className={componentStyles.headerStyles.hamburgerIcon}
                     />
