@@ -7,8 +7,10 @@ const componentStyles = {
 }
 
 import home from './pages/home/home.module.css'
+import error404 from './pages/404/404.module.css'
 
 const pageStyles = {
+    error404: error404,
     homeStyles: home,
 }
 
