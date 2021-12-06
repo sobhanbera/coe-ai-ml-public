@@ -62,7 +62,7 @@ body {
 
 .main-content {
   margin: auto;
-  padding: 0 var(--main-max-padding);
+  padding: 20px var(--main-max-padding);
   max-width: var(--main-max-vw);
   min-height: 85vh;
 }/*# sourceMappingURL=globals.css.map */
