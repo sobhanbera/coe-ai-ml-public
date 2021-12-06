@@ -26,6 +26,7 @@
     list-style-type: none;
     outline: 0;
     transition: 0.15s;
+    color: var(--invertthemecolor);
 }
 
 *::selection {
@@ -35,6 +36,8 @@
 
 body {
     font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 :root {
@@ -61,4 +64,5 @@ body {
     padding: 0 var(--main-max-padding);
 
     max-width: var(--main-max-vw);
+    min-height: 85vh;
 }
