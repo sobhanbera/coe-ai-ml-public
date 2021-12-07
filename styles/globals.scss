@@ -7,6 +7,8 @@
     --light: #f7f7f7;
     --grey: #7f7f7f;
 
+    --background: #efefef;
+
     --themecolor: white;
     --invertthemecolor: black;
 
@@ -59,9 +61,45 @@ body {
     color: black;
 }
 
+.header-image {
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(15deg, #efefef 35%, transparent 70%),
+        url(../public/img/network.jpg);
+    background-size: cover;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .header-content {
+        padding: 25px var(--main-max-padding);
+        max-width: var(--main-max-vw);
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            max-width: 130px;
+            max-height: 130px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+    }
+}
+
 .main-content {
     margin: auto;
-    padding: 20px var(--main-max-padding);
+    padding: 25px var(--main-max-padding);
 
     max-width: var(--main-max-vw);
     min-height: 85vh;
