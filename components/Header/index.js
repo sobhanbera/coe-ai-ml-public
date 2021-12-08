@@ -56,8 +56,8 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/thesis">
-                                <a>Thesis</a>
+                            <Link href="/theses">
+                                <a>Theses</a>
                             </Link>
                         </li>
                         <li>
@@ -125,13 +125,13 @@ export default function Header() {
                                 </li>
                                 <li
                                     className={
-                                        pathname === '/thesis'
+                                        pathname === '/theses'
                                             ? componentStyles.headerStyles
                                                   .listItemActive
                                             : null
                                     }>
-                                    <Link href="/thesis">
-                                        <a>Thesis</a>
+                                    <Link href="/theses">
+                                        <a>Theses</a>
                                     </Link>
                                 </li>
                                 <li
