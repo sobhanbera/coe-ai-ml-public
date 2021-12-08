@@ -1,9 +1,12 @@
 import header from './components/header/header.module.css'
 import footer from './components/footer/footer.module.css'
 
+import button from './components/button/button.module.css'
+
 const componentStyles = {
     headerStyles: header,
     footerStyles: footer,
+    buttonStyles: button,
 }
 
 import home from './pages/home/home.module.css'
