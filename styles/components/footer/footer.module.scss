@@ -1,4 +1,95 @@
 .footer {
-    min-height: 52px;
-    height: 60px;
+    padding: 24px 12px 36px 36px;
+    background-color: var(--logo-color);
+
+    .footerStarts {
+        padding-bottom: 10px;
+
+        background-color: var(--logo-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        // background-color: darkcyan;
+
+        .footerSeperateSection {
+            // margin: auto;
+            min-height: 150px;
+
+            // background-color: darkgoldenrod;
+
+            p {
+                max-width: 368px;
+                color: whitesmoke;
+            }
+
+            .heading {
+                font-size: 20px;
+                font-weight: 500;
+
+                margin-bottom: 24px;
+            }
+
+            .details {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .contactArea {
+                .contactItem {
+                    a {
+                        display: flex;
+
+                        svg {
+                            fill: whitesmoke;
+                            width: 18px;
+                        }
+
+                        p {
+                            padding: 3px 5px;
+                        }
+                    }
+                }
+            }
+
+            .contactSocialArea {
+                display: flex;
+
+                justify-content: flex-start;
+                align-items: center;
+
+                .socialMediaItem {
+                    a {
+                        svg {
+                            fill: whitesmoke;
+                            width: 26px;
+                            padding-top: 10px;
+                            padding-right: 10px;
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .websiteDetails {
+        padding-top: 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: whitesmoke;
+            font-size: 13px;
+
+            b {
+                color: whitesmoke;
+            }
+        }
+    }
 }
