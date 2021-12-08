@@ -113,6 +113,23 @@
 .container .mainContent .newsSection .allNewsButton button {
   flex-grow: 23;
 }
+.container .researchSection {
+  padding: 24px;
+  background-color: #ededed;
+}
+.container .researchSection .mainResearchSection {
+  width: 100%;
+  height: 100%;
+  margin: 0 5.5px;
+}
+.container .researchSection .mainResearchSection .researchSectionHeader {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+.container .test {
+  padding-bottom: 100px;
+}
 
 @media (min-width: 1150px) {
   .container .mainContent .aboutSection {
