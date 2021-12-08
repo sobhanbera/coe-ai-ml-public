@@ -27,6 +27,7 @@
   outline: 0;
   transition: 0.15s;
   color: #151515;
+  font-family: "Montserrat", "Karla", sans-serif;
 }
 
 *::-moz-selection {
