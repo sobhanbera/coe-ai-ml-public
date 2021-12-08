@@ -66,38 +66,12 @@ body {
   color: black;
 }
 
-.header-image {
-  width: 100%;
-  height: 200px;
-  background-image: linear-gradient(15deg, var(--background) 35%, transparent 70%), url(../public/img/network.jpg);
-  background-size: cover;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.header-image .header-content {
-  padding: 25px var(--main-max-padding);
-  max-width: var(--main-max-vw);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-.header-image .header-content img {
-  max-width: 130px;
-  max-height: 130px;
-}
-.header-image .header-content span {
-  font-size: 20px;
+.main-content-global {
+  min-height: 85vh;
 }
 
 .main-content {
   margin: auto;
   padding: 25px var(--main-max-padding);
   max-width: var(--main-max-vw);
-  min-height: 85vh;
 }/*# sourceMappingURL=globals.css.map */
