@@ -6,6 +6,11 @@ import MainSection from '../components/MainSection'
 
 import {pageStyles} from '../styles/css.modules'
 
+import BuildingSVG from '../public/svgs/building.js'
+import BiometricSVG from '../public/svgs/biometric'
+import MicroscopeSVG from '../public/svgs/microscope'
+import RobotSVG from '../public/svgs/robot'
+
 const RecentNews = [
     {
         date: 'Sep 16, 2021',
@@ -20,6 +25,29 @@ const RecentNews = [
     {
         date: 'May 28, 2021',
         news: 'Paper in IEEE Intelligent Vehicles Symposium',
+        link: '',
+    },
+]
+
+const ReseachFields = [
+    {
+        svg: BuildingSVG,
+        title: 'Smart Cities',
+        link: '',
+    },
+    {
+        svg: BiometricSVG,
+        title: 'Biometric System',
+        link: '',
+    },
+    {
+        svg: MicroscopeSVG,
+        title: 'Biomedicine',
+        link: '',
+    },
+    {
+        svg: RobotSVG,
+        title: 'Robotics',
         link: '',
     },
 ]
@@ -115,6 +143,58 @@ export default function Home() {
                     </div>
                 </div>
             </MainSection>
+
+            <div className={pageStyles.homeStyles.researchSection}>
+                <MainSection>
+                    <div className={pageStyles.homeStyles.mainResearchSection}>
+                        <p
+                            className={
+                                pageStyles.homeStyles.researchSectionHeader
+                            }>
+                            Research in Computer Vision and Pattern Recognition
+                            to:
+                        </p>
+
+                        <br />
+                        <br />
+
+                        <div
+                            className={
+                                pageStyles.homeStyles.reseachItemsSection
+                            }>
+                            {ReseachFields.map(Field => {
+                                return (
+                                    <div
+                                        className={
+                                            pageStyles.homeStyles
+                                                .reseachItemsStarts
+                                        }
+                                        key={Field.title}>
+                                        <Link href={Field.link}>
+                                            <a>
+                                                <div
+                                                    className={
+                                                        pageStyles.homeStyles
+                                                            .reseachItem
+                                                    }>
+                                                    <Field.svg />
+                                                    {/* <img
+                                                src={BuildingSVG}
+                                                alt={field.title}
+                                            /> */}
+                                                    <p>{Field.title}</p>
+                                                </div>
+                                            </a>
+                                        </Link>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                </MainSection>
+            </div>
+
+            <div className={pageStyles.homeStyles.test}></div>
         </div>
     )
 }
