@@ -1,4 +1,229 @@
 .container {
-    min-height: 52px;
-    height: 60px;
+    .mainContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .aboutSection {
+            flex-grow: 1;
+            margin-right: 10px; // to make some space between both the sections...
+
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            // align-items: flex-start;
+
+            h3 {
+                font-size: 26px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-size: 18px;
+                max-width: 660px;
+                text-align: justify;
+                // flex-grow: 2;
+                color: #3a3a3a;
+            }
+
+            .aboutSectionIFrame {
+                padding: 24px 0 24px 0;
+                width: 100%;
+                max-width: 700px;
+                min-height: 250px;
+                // max-height: 370px;
+
+                iframe {
+                    // max-width: 700px;
+                    width: 100%;
+                    height: 100%;
+                    min-height: 200px;
+                }
+            }
+        }
+
+        .newsSection {
+            flex-grow: 1;
+            margin-left: 10px; // to make some space between both the sections...
+
+            padding: 12px;
+            background-color: var(--background-dark);
+            // margin-left: 10px;
+            max-width: 400px;
+            border-radius: 6px;
+
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: flex-start;
+
+            h3 {
+                font-size: 26px;
+                padding-bottom: 10px;
+            }
+
+            .news {
+                display: flex;
+                flex-direction: column;
+
+                .newsCard {
+                    border: 0.61px solid #90909050;
+                    border-radius: 6px;
+                    box-shadow: 0 2px 3px rgb(10 10 10 / 10%),
+                        0 0 0 1px rgb(10 10 10 / 10%);
+                    background-color: var(--background);
+
+                    margin: 10px 0;
+
+                    .newsCardStarts {
+                        padding: 12px;
+
+                        .newsText {
+                            padding: 12px;
+
+                            a {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .newsPublishedOn {
+                            border-top: 1px solid #d5d5d5;
+                            padding: 12px 12px 0 12px;
+
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            span {
+                                font-size: 18;
+                                width: 100%;
+                                text-align: center;
+                                color: #4a4a4a;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .allNewsButton {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                button {
+                    flex-grow: 23;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .container {
+        .mainContent {
+            .aboutSection {
+                height: 350px;
+                .aboutSectionIFrame {
+                    iframe {
+                        width: 100%;
+                        height: 370px;
+                    }
+                }
+            }
+
+            .newsSection {
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .container {
+        .mainContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            margin-right: 0px;
+
+            .aboutSection {
+                margin-right: 0px; // to make some space between both the sections...
+
+                .aboutSectionIFrame {
+                    iframe {
+                        width: 100%;
+                        height: 370px;
+                    }
+                }
+            }
+
+            .newsSection {
+                margin-left: 0px; // to make some space between both the sections...
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        .mainContent {
+            .aboutSection {
+                .aboutSectionIFrame {
+                    iframe {
+                        width: 100%;
+                        // min-height: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+
+            .newsSection {
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        .mainContent {
+            .aboutSection {
+                .aboutSectionIFrame {
+                    iframe {
+                        width: 100%;
+                        // min-height: 300px;
+                        height: 250px;
+                    }
+                }
+            }
+
+            .newsSection {
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        .mainContent {
+            .aboutSection {
+                .aboutSectionIFrame {
+                    iframe {
+                        width: 100%;
+                        // min-height: 300px;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .newsSection {
+            }
+        }
+    }
 }
